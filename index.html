@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="img\people01.a772086b.png">
+    <title>Signup to solobank</title>
+    <style>
+        * {
+            margin: 0px, 50px;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+            /* background-image:radial-gradient(farthest-side at 200% 35%, #484582,  #11101d);; */
+            background-color: #11101d;
+            color: white;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        form {
+            margin: 20px, 20px;
+            padding: 20px;
+            width: 45%;
+            height: auto;
+            border-radius: 40px;
+            text-align: center;
+
+            box-shadow: 0 20px 100px -10px #42475b1a;
+            background: linear-gradient(-168.39deg, #ffffff -278.56%, #6d6d6d -78.47%, #11101d 91.61%);
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            padding: 0%;
+            /* height: 300px; */
+            background-image: radial-gradient(farthest-side at 200% 35%, #484582, #11101d);
+            justify-content: center;
+        }
+
+        form div {
+            margin: 12px 0px;
+            background: transparent;
+        }
+
+
+
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #form_head {
+            background: radial-gradient(64.18% 64.18% at 71.16% 35.69%, #def9fa .89%, #bef3f5 17.23%, #9dedf0 42.04%, #7de7eb 55.12%, #5ce1e6 71.54%, #33bbcf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+            /* background: transparent; */
+        }
+
+        hr {
+            width: 50%;
+            margin-top: 28px;
+            margin-bottom: 28px;
+            color: gray;
+            border: 1px solid;
+            /* margin: 0px 10px; */
+        }
+
+        .input_wid {
+            width: 75%;
+        }
+
+        .terms_para {
+            background: transparent;
+            text-align: left;
+            width: 75%;
+            margin: 13px auto;
+        }
+
+        #terms_div {
+            display: flex;
+            flex-direction: row;
+            width: 75%;
+            justify-content: center;
+            text-indent: 18px;
+        }
+
+        #condition {
+            margin: 0;
+            padding: 0;
+            height: 1.5em;
+            width: 1.5em;
+        }
+
+        #terms_div h5 {
+            margin: 0;
+            background: transparent;
+        }
+
+        #terms_div h5 a {
+            background: transparent;
+        }
+
+        #submit {
+            cursor: pointer;
+            outline: none;
+            height: 2.5em;
+            border-radius: 10px;
+            text-indent: 8px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            /* background-color: linear-gradient(157.81deg,#def9fa -43.27%,#bef3f5 -21.24%,#9dedf0 12.19%,#7de7eb 29.82%,#5ce1e6 51.94%,#33bbcf 90.29%); */
+            background: linear-gradient(157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29%);
+            border: none;
+            outline: 2px solid none;
+            outline-offset: 2px;
+            margin: 5px 0px;
+            width: 75%;
+        }
+
+        #submit:hover {
+            background-color: white;
+            opacity: 0.8;
+            color: black;
+            font-weight: 200px;
+        }
+
+
+        .name {
+            width: 37%;
+        }
+
+        .in_box {
+            cursor: pointer;
+            outline: none;
+            /* background-color: transparent; */
+            height: 2.5em;
+            border-radius: 2px;
+            text-indent: 8px;
+            font-size: 16px;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+            border: 2px solid white;
+            background: transparent;
+        }
+
+        .in_box:hover,
+        :focus {
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right, #bef3f5, #33bbcf);
+            ;
+            border-image-slice: 1;
+        }
+
+
+        /* meadia */
+    </style>
+    <link href="C:\Users\sahaj\Downloads\BOOTSTRAP\bootstrap-4.0.0-dist\css\bootstrap.min.css.map" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post">
+            <h2 id="form_head">Connect With Solobank</h2>
+            <hr>
+            <div id="name_div">
+                <input type="text" name="fname" class="in_box name" placeholder="First Name" alt="Enter First Name"
+                    required>
+                <input type="text" name="lname" class="in_box name" placeholder="Last Name" alt="Enter Last Name"
+                    required>
+            </div>
+            <div>
+                <input type="tel" name="phone" class="in_box input_wid" id="pno" placeholder="+91 #####-#####"
+                    alt="Enter phone number" pattern="[0-9]{10}" required>
+            </div>
+            <!-- <h3 style="background: transparent; text-align: center;">Address:</h3> -->
+            <div>
+                <input type="text" name="add" class="in_box input_wid" id="add" placeholder="Street Address"
+                    alt="Enter Address" required>
+            </div>
+            <div id="name_div">
+                <input type="text" name="city" class="in_box name" placeholder="City" alt="Enter City" required>
+                <select name="state" id="state" class="in_box name" alt="Select city" required>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                    <option value="Daman and Diu">Daman and Diu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div id="name_div">
+                <input type="date" name="dob" class="in_box name" placeholder="Birth Date" alt="Enter date o birth"
+                    required>
+                <select name="marital" class="in_box name" alt="Enter marital status" required>
+                    <option value="Telangana">Married</option>
+                    <option value="Tripura">Widowed</option>
+                    <option value="Uttar Pradesh">Separated</option>
+                    <option value="Uttarakhand">Divorced</option>
+                    <option value="West Bengal">Single</option>
+            </div>
+            </select>
+    </div>
+    <div>
+        <input type="text" name="occupation" class="in_box input_wid" id="occupation" placeholder="Occupation"
+            alt="Enter Occupation" required>
+        <div>
+            <input type="email" name="email" class="in_box input_wid" id="email" placeholder="Email"
+                alt="Enter Email Name" required>
+        </div>
+
+        <p class="terms_para">By completing this account registration form, you agree to the terms and conditions that
+            govern your account and your relationship with the bank.</p>
+        <p class="terms_para">Please check the box below to confirm the agreement before sending the bank account
+            registration information.</p>
+
+        <div id="terms_div">
+            <input type="checkbox" name="condition" id="condition" required>
+            <h5>I agree to the <a href="#"> terms of service.</a></h5>
+        </div>
+        <hr>
+        <div>
+            <input type="submit" name="submit_btn" id="submit" value="Join With Us!" alt="Submite button">
+        </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="sign.js"></script>
+</body>
+
+</html>
